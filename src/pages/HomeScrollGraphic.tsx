@@ -2,6 +2,7 @@ import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
 import CalendarButton from 'src/components/CalendarButton';
+import { Chart } from 'src/components/Chart';
 import LineChart from 'src/components/LineChart';
 import styles from 'src/styles/homeScrollGraphic';
 
@@ -49,7 +50,7 @@ const HeartRateCard = () => {
             </View>
           </View>
           <View style={styles.containerHeart}>
-            <LineChart/>
+            <Chart/>
           </View>
       </View>
     </View>
