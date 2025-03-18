@@ -1,3 +1,4 @@
+import { FontAwesome } from '@expo/vector-icons';
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
@@ -50,6 +51,7 @@ const HeartRateCard = () => {
             </View>
           </View>
           <View style={styles.containerHeart}>
+            <Text>Heart            <FontAwesome name='heart'/></Text>
             <Chart/>
           </View>
       </View>
