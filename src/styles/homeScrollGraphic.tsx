@@ -44,7 +44,7 @@ const styles = StyleSheet.create({
     containerInformation: {
         marginTop: 20,
         flexDirection: 'row',
-        height: 200
+        height: 250
     },
     containerColunm: {
         flexDirection: 'column',
@@ -52,7 +52,6 @@ const styles = StyleSheet.create({
     },
     containerCalories: {
         flex: 1,
-        alignItems: 'center',
         justifyContent: 'center',
         backgroundColor: '#fff',
         borderWidth: 2,
@@ -60,8 +59,28 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginLeft: 15,
         marginTop: 5,
-        elevation: 1
+        elevation: 1,
+        padding: 15
     },
+    containerIconTextKcal: {
+        flexDirection: 'row',
+        justifyContent: 'space-between'
+    },
+    containerTextCalories:{
+        fontWeight: 'bold',
+        fontSize: 15,
+        marginBottom: 10
+    },
+    containerNumCalories:{
+        fontWeight: 'bold',
+        fontSize: 20,
+        marginLeft: -4
+    },
+    containerTextKcal:{
+        fontSize: 14,
+        opacity: 0.6
+    },
+
     containerSteps: {
         flex: 1,
         alignItems: 'center',
@@ -72,7 +91,8 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginLeft: 15,
         marginTop: 15,
-        elevation: 1
+        elevation: 1,
+        padding: 15
     },
     containerHeart: {
         flex: 1,

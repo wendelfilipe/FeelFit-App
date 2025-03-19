@@ -40,9 +40,12 @@ const HeartRateCard = () => {
       <View style={styles.containerInformation}>
           <View style={styles.containerColunm}>
             <View style={styles.containerCalories}>
-              <Text> Calories </Text>
-              <Text> 620.68 </Text>
-              <Text> Kcal </Text>
+              <View style={styles.containerIconTextKcal}> 
+                <Text style={styles.containerTextCalories}>Calories</Text>
+                <FontAwesome name='fire' size={15} color='red'/>
+              </View>
+              <Text style={styles.containerNumCalories}> 620.68 </Text>
+              <Text style={styles.containerTextKcal}> Kcal </Text>
             </View>
             <View style={styles.containerSteps}>
               <Text> Calories </Text>

@@ -10,7 +10,7 @@ interface ChartProps {
 
 export const Chart: React.FC<ChartProps> = ({
   width = 170,
-  height = 200,
+  height = 230,
   data = [60, 40, 60, 40, 100],
 }) => {
   const chartWidth = width;
