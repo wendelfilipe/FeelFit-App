@@ -42,19 +42,22 @@ const HeartRateCard = () => {
             <View style={styles.containerCalories}>
               <View style={styles.containerIconTextKcal}> 
                 <Text style={styles.containerTextCalories}>Calories</Text>
-                <FontAwesome name='fire' size={15} color='red'/>
+                <FontAwesome name='fire' size={20} color='red'/>
               </View>
               <Text style={styles.containerNumCalories}> 620.68 </Text>
               <Text style={styles.containerTextKcal}> Kcal </Text>
             </View>
             <View style={styles.containerSteps}>
-              <Text> Calories </Text>
-              <Text> 620.68 </Text>
+              <Text style={styles.containerNumCalories}> Calories </Text>
+              <Text style={styles.containerTextKcal}> 620.68 </Text>
               <Text> Kcal </Text>
             </View>
           </View>
           <View style={styles.containerHeart}>
-            <Text>Heart            <FontAwesome name='heart'/></Text>
+            <View style={styles.containerHeartText}>
+              <Text style={styles.heartText}>Heart</Text>
+              <FontAwesome name='heart' size={20} color='red'/>
+            </View>
             <Chart/>
           </View>
       </View>

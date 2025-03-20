@@ -80,7 +80,6 @@ const styles = StyleSheet.create({
         fontSize: 14,
         opacity: 0.6
     },
-
     containerSteps: {
         flex: 1,
         alignItems: 'center',
@@ -96,15 +95,24 @@ const styles = StyleSheet.create({
     },
     containerHeart: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
         backgroundColor: '#fff',
         borderWidth: 2,
         borderColor: '#f0f0f0',
         borderRadius: 20,
         marginLeft: 15,
         marginRight: 15,
-        elevation: 1
+        elevation: 1,
+    },
+    containerHeartText:{
+        flexDirection: 'row',
+        justifyContent: 'space-between',
+        marginLeft: 20,
+        marginRight:20,
+        marginTop: 15
+    },
+    heartText: {
+        fontWeight: 'bold',
+        fontSize: 15
     }
 })
 
