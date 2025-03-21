@@ -82,8 +82,6 @@ const styles = StyleSheet.create({
     },
     containerSteps: {
         flex: 1,
-        alignItems: 'center',
-        justifyContent: 'center',
         backgroundColor: '#fff',
         borderWidth: 2,
         borderColor: '#f0f0f0',
@@ -92,6 +90,11 @@ const styles = StyleSheet.create({
         marginTop: 15,
         elevation: 1,
         padding: 15
+    },
+    containerIconTextSteps: {
+        justifyContent: 'space-between',
+        flexDirection:  'row'
+
     },
     containerHeart: {
         flex: 1,

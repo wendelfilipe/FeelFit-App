@@ -1,7 +1,8 @@
-import { FontAwesome } from '@expo/vector-icons';
+import { FontAwesome, FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
+import Icon from 'react-native-vector-icons/FontAwesome';
 import CalendarButton from 'src/components/CalendarButton';
 import { Chart } from 'src/components/Chart';
 import LineChart from 'src/components/LineChart';
@@ -48,9 +49,12 @@ const HeartRateCard = () => {
               <Text style={styles.containerTextKcal}> Kcal </Text>
             </View>
             <View style={styles.containerSteps}>
-              <Text style={styles.containerNumCalories}> Calories </Text>
-              <Text style={styles.containerTextKcal}> 620.68 </Text>
-              <Text> Kcal </Text>
+              <View style={styles.containerIconTextSteps}>
+                <Text style={styles.containerTextCalories}> Steps </Text>
+                <MaterialCommunityIcons name='shoe-sneaker' size={25} color='red' />
+              </View>
+              <Text style={styles.containerNumCalories}> 620.68 </Text>
+              <Text style={styles.containerTextKcal}> Kcal </Text>
             </View>
           </View>
           <View style={styles.containerHeart}>
