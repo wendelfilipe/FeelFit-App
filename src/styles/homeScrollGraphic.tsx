@@ -59,7 +59,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginLeft: 15,
         marginTop: 5,
-        elevation: 1,
+        elevation: 10,
         padding: 15
     },
     containerIconTextKcal: {
@@ -88,7 +88,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginLeft: 15,
         marginTop: 15,
-        elevation: 1,
+        elevation: 10,
         padding: 15
     },
     containerIconTextSteps: {
@@ -104,7 +104,7 @@ const styles = StyleSheet.create({
         borderRadius: 20,
         marginLeft: 15,
         marginRight: 15,
-        elevation: 1,
+        elevation: 10,
     },
     containerHeartText:{
         flexDirection: 'row',
@@ -112,6 +112,16 @@ const styles = StyleSheet.create({
         marginLeft: 20,
         marginRight:20,
         marginTop: 15
+    },
+    containerBottom: {
+        flex: 1,
+        borderWidth: 2,
+        backgroundColor: '#fff',
+        borderColor: '#f0f0f0',
+        borderRadius: 20,
+        margin: 15,
+        elevation: 10,
+        alignItems: 'center'
     },
     heartText: {
         fontWeight: 'bold',

@@ -65,6 +65,9 @@ const HeartRateCard = () => {
             <Chart/>
           </View>
       </View>
+      <View style={styles.containerBottom}>
+        <Text>Conteudo</Text>
+      </View>
     </View>
 )
 }
