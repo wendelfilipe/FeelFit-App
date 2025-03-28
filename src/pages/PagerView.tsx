@@ -7,6 +7,7 @@ import { RootStackParamList } from 'src/typescript/RootStackParamList';
 import { RouteProp } from '@react-navigation/native';
 import HomeScroll1 from './HomeScroll1';
 import HomeScrollGraphic from './HomeScrollGraphic';
+import HomeScroll2 from './HomeScroll2';
 
 type LoginScreenNavigationProp = NativeStackNavigationProp<RootStackParamList, 'PagerView'>
 
@@ -23,7 +24,7 @@ const PagerViewHome: React.FC<Props> = ({ navigation, route }) => {
     // Estado para rastrear a página atual
     const [currentPage, setCurrentPage] = useState(0);
 
-    const amountPage: number[] = [0, 1];
+    const amountPage: number[] = [0, 1, 2];
 
   
     // Função para lidar com mudanças de página
@@ -53,6 +54,9 @@ const PagerViewHome: React.FC<Props> = ({ navigation, route }) => {
           </View>
           <View style={styles.page}>
             <HomeScrollGraphic/>
+          </View>
+          <View>
+            <HomeScroll2/>
           </View>
         </PagerView>
       </View>

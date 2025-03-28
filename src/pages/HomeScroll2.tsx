@@ -1,7 +1,6 @@
 import { formatDate } from "date-fns";
 import React, { useEffect, useState } from "react";
 import { View, Text, Image, StyleSheet } from "react-native";
-import CalendarButton from "src/components/CalendarButton";
 import ContainerUser from "src/components/ContainerUser";
 
 const HomeScroll2: React.FC = () => {
@@ -18,6 +17,8 @@ const HomeScroll2: React.FC = () => {
         </View>
     )
 } 
+
+export default HomeScroll2;
 
 const styles = StyleSheet.create({
     containerAll:{
