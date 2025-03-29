@@ -13,7 +13,11 @@ const HomeScroll2: React.FC = () => {
     return (
         <View style={styles.containerAll}>
             <ContainerUser 
-                currentDate={currentDate}/>
+                currentDate={currentDate}
+            />
+            <View>
+                <Text>Informacoes aqui</Text>
+            </View>
         </View>
     )
 } 
