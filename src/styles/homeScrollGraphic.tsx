@@ -123,6 +123,18 @@ const styles = StyleSheet.create({
         elevation: 10,
         alignItems: 'center'
     },
+    containerBottomRow: {
+        flex:1,
+        flexDirection: 'row',
+        padding: 15
+    },
+    containerBottomInvite: {
+        flex: 1
+    },
+    containerBottomInviteText: {
+        flex: 4
+
+    },
     heartText: {
         fontWeight: 'bold',
         fontSize: 15

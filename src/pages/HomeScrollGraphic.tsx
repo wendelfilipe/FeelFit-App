@@ -2,6 +2,7 @@ import { FontAwesome, FontAwesome5, MaterialCommunityIcons } from '@expo/vector-
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
 import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
+import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import CalendarButton from 'src/components/CalendarButton';
 import { Chart } from 'src/components/Chart';
@@ -66,7 +67,31 @@ const HeartRateCard = () => {
           </View>
       </View>
       <View style={styles.containerBottom}>
-        <Text>Conteudo</Text>
+        <View style={styles.containerBottomRow}>
+          <View style={styles.containerBottomInvite}>
+            <Svg height="100%" width="100%">
+              <Defs>
+                <LinearGradient id="areaGradient" x1="0" y1="0" x2="0" y2="1">
+                  <Stop offset="0" stopColor="#ff3b1f" stopOpacity="0.9" />
+                  <Stop offset="1" stopColor="#ff3b1f" stopOpacity="0.1" />
+                </LinearGradient>
+              </Defs>
+        
+              {/* Retângulo com gradiente e borda */}
+              <Rect
+                width="100%"
+                height="100%"
+                fill="url(#areaGradient)" 
+                stroke="#ff3b1f" 
+                rx="20"            
+                ry="20"            
+              />
+            </Svg>
+          </View>
+          <View style={styles.containerBottomInviteText}>
+
+          </View>
+        </View>
       </View>
     </View>
 )
