@@ -1,8 +1,7 @@
 import { FontAwesome, FontAwesome5, MaterialCommunityIcons } from '@expo/vector-icons';
 import { format } from 'date-fns';
 import React, { useEffect, useState } from 'react';
-import { View, Text, StyleSheet, Dimensions, Image } from 'react-native';
-import { TouchableOpacity } from 'react-native-gesture-handler';
+import { View, Text, TouchableOpacity, Dimensions, Image } from 'react-native';
 import Svg, { Defs, LinearGradient, Rect, Stop } from 'react-native-svg';
 import Icon from 'react-native-vector-icons/FontAwesome';
 import CalendarButton from 'src/components/CalendarButton';
@@ -67,7 +66,7 @@ const HeartRateCard = () => {
             <Chart/>
           </View>
       </View>
-      <TouchableOpacity>
+      <TouchableOpacity style={{flex: 1}}>
         <View style={styles.containerBottom}>
           <View style={styles.containerBottomRow}>
             <View style={styles.containerBottomInvite}>

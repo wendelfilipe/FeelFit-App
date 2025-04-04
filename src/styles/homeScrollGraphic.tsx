@@ -132,8 +132,9 @@ const styles = StyleSheet.create({
         flex: 1
     },
     containerBottomInviteText: {
-        flex: 4
-
+        flex: 4,
+        justifyContent: 'center',
+        marginLeft: 10
     },
     heartText: {
         fontWeight: 'bold',
