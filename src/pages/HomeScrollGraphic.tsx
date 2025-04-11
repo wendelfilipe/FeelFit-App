@@ -77,8 +77,6 @@ const HeartRateCard = () => {
                     <Stop offset="1" stopColor="#ff3b1f" stopOpacity="0.1" />
                   </LinearGradient>
                 </Defs>
-          
-                {/* Retângulo com gradiente e borda */}
                 <Rect
                   width="100%"
                   height="100%"
